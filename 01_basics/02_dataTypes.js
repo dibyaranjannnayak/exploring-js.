@@ -5,7 +5,7 @@ let age = 21.2            //number
 let bigInt = 1234567890123456789012345678901234567890n; //bigInt
 let isBoy = true           //boolean
 let id;                     //undefined
-let health = null           //null
+let health = null           //null * but the type of null is object
 let sym = Symbol('description') //symbol 
 
 

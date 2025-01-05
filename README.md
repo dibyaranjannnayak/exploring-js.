@@ -39,6 +39,7 @@ DATA TYPES::
 
                         f. null- it is the intentional absence of any value.
                                  it is a standalone value.    (id=null)
+                                 *but when we check the data type of null it shows as object.
 
                         g. undefined- variable is declared but not assigned yet. (car;)
 
@@ -49,3 +50,22 @@ DATA TYPES::
 
                         b.array-It is the ordered collection of values.
                                 It is a type of object.     (contries = ['India','russi','nepal'])
+
+
+
+
+Data Type Conversion ::
+                - It is the phenomenon in js where one data type is converted into another either manually or automatically.
+
+                1.Explicit conversion (manual)
+                2.Implicit conversion (automatic)
+
+        1.Explicit conversion :
+                let str = "123";
+                let num = Number(str); // Converts string to number
+                console.log(typeof num); // Output: "number"
+
+        2.Implicit conversion :
+                let result = "5" + 2; // "52"
+                // String concatenation takes precedence, so the number is converted to a string
+
