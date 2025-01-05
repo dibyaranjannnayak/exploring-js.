@@ -9,3 +9,13 @@ let health = null           //null
 let sym = Symbol('description') //symbol 
 
 
+let person = {          //object
+    namee: 'nayak',
+    age: 21,
+    id
+};
+
+let contries = ['India','Japan','Indonesia',23];        //array
+
+console.log(typeof(null)) //object
+console.log(typeof(undefined)) //undefined
