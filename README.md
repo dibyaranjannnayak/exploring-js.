@@ -3,7 +3,7 @@ studying about javascript
 
 console.log("welcome")
 
-storage::  memory space(variables)
+storage ::  memory space(variables)
         
         > in js we can create memory space to store data using --
                                                     1.const
@@ -18,7 +18,7 @@ storage::  memory space(variables)
 
 
 
-DATA TYPES::
+DATA TYPES ::
 
         -- JavaScript is indeed a dynamically typed language, which means you don't need to declare the data type of a variable when you create it. 
         --The type is determined at runtime based on the value assigned to the variable. This flexibility allows you to write code more quickly and with fewer constraints.
@@ -69,3 +69,53 @@ Data Type Conversion ::
                 let result = "5" + 2; // "52"
                 // String concatenation takes precedence, so the number is converted to a string
 
+
+
+Operations ::
+
+        -There are various types of operations in js.
+
+        1.Arithmetic operations.
+        2.Comparision operations.
+        3.logical operations.
+        4.Bitwise operations.
+
+   1.Arithmetic operations:
+                let a = 10;
+
+                let b = 5;
+                let sum = a + b;        // Addition: 15
+                let difference = a - b; // Subtraction: 5
+                let product = a * b;    // Multiplication: 50
+                let quotient = a / b;   // Division: 2
+                let remainder = a % b;  // Modulus: 0
+                let exponent = a ** b;  // Exponentiation: 100000
+   
+   2.Comparission operations:
+                let x = 10;
+                let y = '10';
+
+                let isEqual = (x == y);        // Equality: false
+                let isStrictEqual = (x === y); // Strict equality: false
+                let isNotEqual = (x != y);     // Inequality: true
+                let isGreater = (x > y);       // Greater than: false
+                let isLess = (x < y);          // Less than: true
+                let isGreaterOrEqual = (x >= y); // Greater than or equal to: false
+                let isLessOrEqual = (x <= y);  // Less than or equal to: true
+
+   3.Logical operations:
+                let a = true;
+                let b = false;
+
+                let andOperation = (a && b); // Logical AND: false
+                let orOperation = (a || b);  // Logical OR: true
+                let notOperation = !a;       // Logical NOT: false
+
+   4.Bitwise operations:
+                let bitwiseAnd = (5 & 3);   // Bitwise AND: 1
+                let bitwiseOr = (5 | 3);    // Bitwise OR: 7
+                let bitwiseXor = (5 ^ 3);   // Bitwise XOR: 6
+                let bitwiseNot = ~5;        // Bitwise NOT: -6
+                let leftShift = (5 << 1);   // Left shift: 10
+                let rightShift = (5 >> 1);  // Right shift: 2
+                let zeroFillRightShift = (5 >>> 1); // Zero-fill right shift: 2
