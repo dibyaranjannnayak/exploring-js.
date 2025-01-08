@@ -25,6 +25,10 @@ DATA TYPES ::
 
         types:
         1.Primitive data types
+
+          - These are call by value data types.
+          -There are 7 types of primitive data types.
+
                         a. String- represent textual data.  ('dibya')
 
                         b. Number- represent number like integer,float. (23,2.2)
@@ -44,12 +48,16 @@ DATA TYPES ::
                         g. undefined- variable is declared but not assigned yet. (car;)
 
 
-        2.Composite data types
+        2.Non primitive data types
+         -These are also known as reference data types.
+         -The data types of all the non primitive data types are object ( function - object function)
 
                         a. object-It is the collection of key-value pairs.  (person = {name, age:22, id:2222})
 
                         b.array-It is the ordered collection of values.
                                 It is a type of object.     (contries = ['India','russi','nepal'])
+
+                        c.function - A function is a block of code that is designed to perform a perticular job , executed when called or invoked.                (myFunction = function(){console.log()})
 
 
 
