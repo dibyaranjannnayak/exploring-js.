@@ -119,3 +119,20 @@ Operations ::
                 let leftShift = (5 << 1);   // Left shift: 10
                 let rightShift = (5 >> 1);  // Right shift: 2
                 let zeroFillRightShift = (5 >>> 1); // Zero-fill right shift: 2
+
+
+Comparision ::
+        - in js when we compare a string with a number, if the string can be converted into number then it turned into number due to type coercion.
+        - But if the string can't be then the conversion failed and it remains a string.
+
+                console.log('02' > 1)   //true
+                console.log('a12' > 1)  //false
+
+        - conversion and equality operators behave differently , conversion operators(<,>,<=,>=) convert the string or the data type used into number .
+
+                console.log(null == 0)  //false
+                console.log(null < 0)   //false
+                console.log(null <= 0)  //true    it converts null into 0 
+
+        * likewise it turns undefined into NaN.
+        * But its not adviseable to compare between different datatypes , which is not a clean code.
