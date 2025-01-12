@@ -144,3 +144,28 @@ Comparision ::
 
         * likewise it turns undefined into NaN.
         * But its not adviseable to compare between different datatypes , which is not a clean code.
+
+
+
+
+Memory Location ::
+        --There are two areas of memory in js , which is stack and heap.
+
+        Stack:
+           -Stack is used for static memory allocation. (primitive data types)
+           -This is where local variables and function call informations are stored.
+           -The structure is  LIFO .
+           -It is smaller in size and automatically managed.
+
+        Heap:
+          -Heap is used for dynamic memory allocation, it is where non primitive data types are stored.
+          -The heap size is larger .
+          -Heap is managed by garbage collector.
+
+
+          --when we store a original primitive data  in another variable, a copy of the original data is created and stored in the stack. so when we make any change in the second variable it doesn't affect the origina value.
+          
+          --But when we store the original non primitive data in another variable, a refference is created to the original value so when we make any change in the second variable the original value also get affected.
+
+
+ ** in primitive copy of data is created while in non primitive data a reference is created.
