@@ -1,6 +1,6 @@
 # exploring-js.
-studying about javascript
-1.js is mainly an interpreted language, but modern js engines like v8 in google chrome use JIT(just in time) compilation to boost performance.
+--studying about javascript
+--js is mainly an interpreted language, but modern js engines like v8 in google chrome use JIT(just in time) compilation to boost performance.
 console.log("welcome")
 
 storage ::  memory space(variables)
