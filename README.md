@@ -11,9 +11,9 @@ storage ::  memory space(variables)
                                                     2.var
                                                     3.let
                                                     
- 1...const -- to store constants, we can't change the value later.
- 2...let -- to store variables (scope-block)
- 3...var -- to store variables (scope-function)
+ 1. const -- to store constants, we can't change the value later.
+ 2. let -- to store variables (scope-block)
+ 3. var -- to store variables (scope-function)
 
  ***in modern js we avoid to use var due to function scope issues.
 
