@@ -62,7 +62,10 @@ DATA TYPES ::
 
                         c.function - A function is a block of code that is designed to perform a perticular job , executed when called or invoked.                (myFunction = function(){console.log()})
 
-
+* datatypes
+  1. null = object
+  2. undefined = undefined
+  3. NaN = number
 
 
 Data Type Conversion ::
