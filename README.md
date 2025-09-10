@@ -48,6 +48,8 @@ DATA TYPES ::
 
                         g. undefined- variable is declared but not assigned yet. (car;)                  * The datatype of undefined - 'undefined'
 
+                        h. NaN - not a number (special type of datatype) datatype(NaN) = number;
+
 
         2.Non primitive data types
          -These are also known as reference data types.
