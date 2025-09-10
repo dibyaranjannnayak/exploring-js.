@@ -44,9 +44,9 @@ DATA TYPES ::
 
                         f. null- it is the intentional absence of any value.
                                  it is a standalone value.    (id=null)
-                                 *but when we check the data type of null it shows as object.
+                                 *but when we check the data type of null it shows as object.            * The datatype of null - 'object'
 
-                        g. undefined- variable is declared but not assigned yet. (car;)
+                        g. undefined- variable is declared but not assigned yet. (car;)                  * The datatype of undefined - 'undefined'
 
 
         2.Non primitive data types
