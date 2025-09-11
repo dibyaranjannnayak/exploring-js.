@@ -83,7 +83,17 @@ Data Type Conversion ::
                 let result = "5" + 2; // "52"
                 // String concatenation takes precedence, so the number is converted to a string
 
+* When we convert into boolean datatype:
+                  Boolean(NaN) = false
+                  Boolean(undefined) = false
+                  Boolean(null) = false
+                  Boolean("") = false
 
+* When we convert into number datatype:
+                  Number(NaN) = NaN
+                  Number(undefined) = NaN
+                  Number(null) = 0
+                  Number("") = 0               
 
 Operations ::
 
