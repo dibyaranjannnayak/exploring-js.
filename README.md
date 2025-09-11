@@ -84,16 +84,16 @@ Data Type Conversion ::
                 // String concatenation takes precedence, so the number is converted to a string
 
 * When we convert into boolean datatype:
-                  Boolean(NaN) = false
-                  Boolean(undefined) = false
-                  Boolean(null) = false
-                  Boolean("") = false
+                  1.Boolean(NaN) = false
+                  2.Boolean(undefined) = false
+                  3.Boolean(null) = false
+                  4.Boolean("") = false
 
 * When we convert into number datatype:
-                  Number(NaN) = NaN
-                  Number(undefined) = NaN
-                  Number(null) = 0
-                  Number("") = 0               
+                  1.Number(NaN) = NaN
+                  2.Number(undefined) = NaN
+                  3.Number(null) = 0
+                  4.Number("") = 0               
 
 Operations ::
 
@@ -116,16 +116,34 @@ Operations ::
                 let exponent = a ** b;  // Exponentiation: 100000
    
    2.Comparission operations:
+   * comparision operators (<,>,<=,>=) work differently compairing to equality operators (==,===)
+   * So when we compare two different datatypes using comparision operators, it tries to convert them into numbers.
                 let x = 10;
                 let y = '10';
 
-                let isEqual = (x == y);        // Equality: false
+                let isEqual = (x == y);        // Equality: true
                 let isStrictEqual = (x === y); // Strict equality: false
-                let isNotEqual = (x != y);     // Inequality: true
+                let isNotEqual = (x != y);     // Inequality: false
                 let isGreater = (x > y);       // Greater than: false
-                let isLess = (x < y);          // Less than: true
-                let isGreaterOrEqual = (x >= y); // Greater than or equal to: false
+                let isLess = (x < y);          // Less than: false
+                let isGreaterOrEqual = (x >= y); // Greater than or equal to: true
                 let isLessOrEqual = (x <= y);  // Less than or equal to: true
+
+             null == 0 //false
+             null >= 0 //true  - 0 >= 0
+             undefined == 0 //false
+             undefined >= 0 //false - NaN >= 0
+             NaN == 0 //false
+             NaN >= 0 //false - NaN >= 0
+
+     *In js undefined is lossely equal with null, so:
+             null == undefined //true
+             null >= undefined //false  - 0 >= NaN
+
+     *In js NaN is not equal to anything, not even with etself.
+             undefined == NaN //false
+             undefined >= Nan //false - NaN >= Nan
+             
 
    3.Logical operations:
                 let a = true;
