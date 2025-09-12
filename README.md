@@ -48,17 +48,17 @@ DATA TYPES ::
 
                         g. undefined- variable is declared but not assigned yet. (car;)                  * The datatype of undefined - 'undefined'
 
-                        h. NaN - not a number (special type of datatype) datatype(NaN) = number;
+                        1. NaN - It's not a special datatype, its a special numeric value;               * The datatype of NaN - 'number'
 
 
         2.Non primitive data types
          -These are also known as reference data types.
          -The data types of all the non primitive data types are object ( function - object function)
 
-                        a. object-It is the collection of key-value pairs.  (person = {name, age:22, id:2222})
+                        a. object - It is the collection of key-value pairs.  (person = {name, age:22, id:2222})
 
-                        b.array-It is the ordered collection of values.
-                                It is a type of object.     (contries = ['India','russi','nepal'])
+                        b.array - It is the ordered collection of values.
+                                  It is a type of object.     (contries = ['India','russi','nepal'])
 
                         c.function - A function is a block of code that is designed to perform a perticular job , executed when called or invoked.                (myFunction = function(){console.log()})
 
@@ -137,12 +137,12 @@ Operations ::
              NaN >= 0 //false - NaN >= 0
 
      *In js undefined is lossely equal with null, so:
-             null == undefined //true
-             null >= undefined //false  - 0 >= NaN
+             1. null == undefined //true
+             2. null >= undefined //false  - 0 >= NaN
 
      *In js NaN is not equal to anything, not even with etself.
-             undefined == NaN //false
-             undefined >= Nan //false - NaN >= Nan
+             1. undefined == NaN //false
+             2. undefined >= Nan //false - NaN >= Nan
              
 
    3.Logical operations:
