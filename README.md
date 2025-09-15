@@ -136,11 +136,11 @@ Operations ::
              NaN == 0 //false
              NaN >= 0 //false - NaN >= 0
 
-     *In js undefined is lossely equal with null, so:
+     a. In js undefined is lossely equal with null, so ::
              1. null == undefined //true
              2. null >= undefined //false  - 0 >= NaN
 
-     *In js NaN is not equal to anything, not even with etself.
+     b. In js NaN is not equal to anything, not even with etself ::
              1. undefined == NaN //false
              2. undefined >= Nan //false - NaN >= Nan
              
@@ -161,6 +161,21 @@ Operations ::
                 let leftShift = (5 << 1);   // Left shift: 10
                 let rightShift = (5 >> 1);  // Right shift: 2
                 let zeroFillRightShift = (5 >>> 1); // Zero-fill right shift: 2
+
+  5.Unary operators::
+                a. Pre-increment/pre-dicrement:
+                        let a = 3
+                        console.log(++a)     // 4
+                        console.log(a)      // 4
+                        console.log(--a)    // 3  
+                        console.log(a)      // 3
+                b. post-increment/post-dicrement:
+                        let a = 3
+                        console.log(a++)     // 3
+                        console.log(a)       // 4
+                        console.log(a--)     // 4 
+                        console.log(a)       // 3
+                
 
 
 Comparision ::
