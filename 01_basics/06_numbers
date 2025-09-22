@@ -1,0 +1,25 @@
+//In JS, we have only one number type: Number, which include both: Integer and Float values.
+
+// IN JS, we also have some special number type, which include: Infinity,NaN
+
+console.log(1/0)        // Infinity
+
+console.log(0/0)        // NaN
+
+console.log(0/1)        // 0
+
+// Declaration of number in JS
+let num = 23.342
+let num1 = new Number(12.343)
+
+console.log(num.toFixed(2))     // 23.34
+console.log(num1.toFixed(2))    // 12.34
+
+console.log(num.toPrecision(3))     // 23.3
+console.log(num1.toPrecision(3))    // 12.3
+
+let price = 10000000.67
+
+console.log(price.toLocaleString('en-IN'))      //1,00,00,000.67
+console.log(price.toExponential(3))              //1.000e+7
+
