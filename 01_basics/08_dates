@@ -1,0 +1,30 @@
+//*** Dates in Js
+//*** In JS Date is an object datatype.
+
+
+let myDates = new Date()
+
+console.log(myDates)                  //  2025-09-25T10:50:46.515Z
+
+
+console.log(myDates.toDateString())     // Thu Sep 25 2025
+
+
+console.log(myDates.toLocaleString())   // 9/25/2025, 12:05:56 PM
+
+
+console.log(myDates.toLocaleDateString())   // 9/25/2025
+
+
+console.log(myDates.getDate())      // 25
+
+//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
+
+let createDate = new Date(2025, 0, 31)
+let createDate1 = new Date("01-14-2023")
+console.log(createDate.toString())
+console.log(createDate1.toString())
+
+let myTimestamp = Date.now()
+console.log(myTimestamp)        // 1758804929742
+console.log(createDate.getTime())   // 1738281600000
