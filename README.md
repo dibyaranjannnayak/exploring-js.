@@ -116,8 +116,9 @@ Operations ::
                 let exponent = a ** b;  // Exponentiation: 100000
    
    2.Comparission operations:
-   * comparision operators (<,>,<=,>=) work differently compairing to equality operators (==,===)
-   * So when we compare two different datatypes using comparision operators, it tries to convert them into numbers.
+     - comparision operators (<,>,<=,>=) work differently compairing to equality operators (==,===)
+      - So when we compare two different datatypes using comparision operators, it tries to convert them into numbers.
+         /*
                 let x = 10;
                 let y = '10';
 
@@ -135,6 +136,7 @@ Operations ::
              undefined >= 0 //false - NaN >= 0
              NaN == 0 //false
              NaN >= 0 //false - NaN >= 0
+         */
 
      a. In js undefined is lossely equal with null, so ::
              1. null == undefined //true
@@ -162,7 +164,7 @@ Operations ::
                 let rightShift = (5 >> 1);  // Right shift: 2
                 let zeroFillRightShift = (5 >>> 1); // Zero-fill right shift: 2
 
-  5.Unary operators::
+  5.Unary operators:
                 a. Pre-increment/pre-dicrement:
                         let a = 3
                         console.log(++a)     // 4
@@ -185,7 +187,8 @@ Comparision ::
                 console.log('02' > 1)   //true
                 console.log('a12' > 1)  //false
 
-        - conversion and equality operators behave differently , conversion operators(<,>,<=,>=) convert the string or the data type used into number .
+        - conversion and equality operators behave differently 
+        - conversion operators(<,>,<=,>=) convert the string or the data type used into      number .
 
                 console.log(null == 0)  //false
                 console.log(null < 0)   //false
@@ -218,3 +221,17 @@ Memory Location ::
 
 
  ** in primitive copy of data is created while in non primitive data a reference is created.
+
+
+
+Array:
+        /* In js, array is a special type of object using which we can store multiple values 
+   in a single variable.  */
+
+        // in js, we can store values of different datatypes in array. 
+
+        // in js, array is mutable(resizeable). We can add and delete values anytime.
+
+        /* The copy of array is shallow coppy, which means the original and the copy both have 
+        same reference so, when we make some changes to the copied array the change will refleact in original.
+        */
