@@ -225,8 +225,11 @@ Memory Location ::
 
 
 Array:
+
+
         /* In js, array is a special type of object using which we can store multiple values 
-   in a single variable.  */
+          in a single variable.  
+        */
 
         // in js, we can store values of different datatypes in array. 
 
@@ -235,3 +238,25 @@ Array:
         /* The copy of array is shallow coppy, which means the original and the copy both have 
         same reference so, when we make some changes to the copied array the change will refleact in original.
         */
+
+
+
+
+Object:
+
+        // Oject literals: In JavaScript, this is the simplest and most common way to create objects
+
+        // by just using {}, we can create an object. 
+
+        /* Singletone: we create only one single instance of an object, and we use that same instance everywhere in our program.
+         1. we can't create multiple instances of it, everytime we access it, we will get the same reference.
+         2. By using constructor, we creat singletone object.
+        */
+
+        // object store values in 'key: value' pairs.
+
+        // we can access values in object using two methods:
+
+        // 1. object.key
+        // 2. object['key']
+        // for symbol, object[symbol]
