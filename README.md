@@ -24,8 +24,8 @@ DATA TYPES ::
         -- JavaScript is indeed a dynamically typed language, which means you don't need to declare the data type of a variable when you create it. 
         --The type is determined at runtime based on the value assigned to the variable. This flexibility allows you to write code more quickly and with fewer constraints.
 
-        types:
-        1.Primitive data types
+        types::
+        1.Primitive data types:
 
           - These are call by value data types.
           -There are 7 types of primitive data types.
@@ -46,12 +46,13 @@ DATA TYPES ::
                                  it is a standalone value.    (id=null)
                                  *but when we check the data type of null it shows as object.            * The datatype of null - 'object'
 
-                        g. undefined- variable is declared but not assigned yet. (car;)                  * The datatype of undefined - 'undefined'
+                        g. undefined- variable is declared but not assigned yet. (car;)   * The datatype of undefined - 'undefined'
 
                         1. NaN - It's not a special datatype, its a special numeric value;               * The datatype of NaN - 'number'
 
 
-        2.Non primitive data types
+        2.Non primitive data types:
+
          -These are also known as reference data types.
          -The data types of all the non primitive data types are object ( function - object function)
 
@@ -69,6 +70,7 @@ DATA TYPES ::
 
 
 Data Type Conversion ::
+
                 - It is the phenomenon in js where one data type is converted into another either manually or automatically.
 
                 1.Explicit conversion (manual)
@@ -84,12 +86,16 @@ Data Type Conversion ::
                 // String concatenation takes precedence, so the number is converted to a string
 
 * When we convert into boolean datatype:
+
+
                   1.Boolean(NaN) = false
                   2.Boolean(undefined) = false
                   3.Boolean(null) = false
                   4.Boolean("") = false
 
 * When we convert into number datatype:
+
+
                   1.Number(NaN) = NaN
                   2.Number(undefined) = NaN
                   3.Number(null) = 0
@@ -105,8 +111,9 @@ Operations ::
         4.Bitwise operations.
 
    1.Arithmetic operations:
-                let a = 10;
 
+
+                let a = 10;
                 let b = 5;
                 let sum = a + b;        // Addition: 15
                 let difference = a - b; // Subtraction: 5
@@ -116,7 +123,9 @@ Operations ::
                 let exponent = a ** b;  // Exponentiation: 100000
    
    2.Comparission operations:
-     - comparision operators (<,>,<=,>=) work differently compairing to equality operators (==,===)
+
+
+      - comparision operators (<,>,<=,>=) work differently compairing to equality operators (==,===)
       - So when we compare two different datatypes using comparision operators, it tries to convert them into numbers.
          /*
                 let x = 10;
@@ -148,6 +157,8 @@ Operations ::
              
 
    3.Logical operations:
+
+
                 let a = true;
                 let b = false;
 
@@ -156,6 +167,8 @@ Operations ::
                 let notOperation = !a;       // Logical NOT: false
 
    4.Bitwise operations:
+
+
                 let bitwiseAnd = (5 & 3);   // Bitwise AND: 1
                 let bitwiseOr = (5 | 3);    // Bitwise OR: 7
                 let bitwiseXor = (5 ^ 3);   // Bitwise XOR: 6
@@ -165,6 +178,8 @@ Operations ::
                 let zeroFillRightShift = (5 >>> 1); // Zero-fill right shift: 2
 
   5.Unary operators:
+
+
                 a. Pre-increment/pre-dicrement:
                         let a = 3
                         console.log(++a)     // 4
@@ -181,7 +196,10 @@ Operations ::
 
 
 Comparision ::
+
+
         - in js when we compare a string with a number, if the string can be converted into number then it turned into number due to type coercion.
+
         - But if the string can't be then the conversion failed and it remains a string.
 
                 console.log('02' > 1)   //true
@@ -201,6 +219,8 @@ Comparision ::
 
 
 Memory Location ::
+
+
         --There are two areas of memory in js , which is stack and heap.
 
         Stack:
@@ -260,3 +280,50 @@ Object:
         // 1. object.key
         // 2. object['key']
         // for symbol, object[symbol]
+
+
+
+Function::
+
+        -A function in JavaScript is a block of reusable code designed to perform a particular task. You can think of it as a mini-program inside your main program — it takes input (called parameters), processes it, and may return an output.
+
+        syntax-
+         function functionName(parameters) {
+                 // code to be executed
+         return result; // optional
+        
+        -Parameter: The variables listed inside the function's paranthessis in the function declaration.
+                    They act as inputs that the function expects to receive.
+
+        -Arguments: These are the actual values you pass into the function when calling the function.
+                    They are the real data that replaces the parameters during execution.
+
+
+        *say myFunction is the function defined by the developer.
+        Then 
+                function myFunction(){}  // definition
+                myFunction   // reference
+                myFunction() // execution
+
+
+
+
+Scope::
+
+
+        // Scope - The area or region in your code where a variable is accessible.
+        // It decides where you can use a variable and where you cannot.
+        // mostly {} defines the scope.
+        // We have 3 scopes.
+        /*
+        1. Global scope: A variable declared outside any function or block.
+           It can be accessed from anywhere in the code.
+    
+        2. Function scope(Local scope): Variables declared inside a function are local to that function.
+           You cannot access them outside the function.
+
+        3. Block scope: Variables declared with let or const inside a block ({ ... })
+           can only be accessed inside that block.
+
+        */
+        //***  The gloabal scope of the variale in browser, and the global scope of the variable in the code in node enviornment  is different
