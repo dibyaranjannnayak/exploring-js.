@@ -364,3 +364,28 @@ This::
                 * They inherit this from their surrounding (lexical) scope.
 
         */
+
+
+
+Arrow function::
+
+
+        // arrow function: Arrow functions are shorter and often used for simple one-liners.
+        // Arrow functions don’t have their own this.They use the this value from the surrounding (lexical) scope.
+        // Arrow functions don't have arguments keyword.
+        // Arrow function:  cannot be used as a constructor. (using new keyward)
+        // Arrow functions (assigned to variables) are not hoisted.
+
+
+
+IIFE::
+
+
+        // IIFE: IIFE stands for Immediately Invoked Function Expression.
+        // It’s a function that executes immediately after it’s defined.
+        /*
+        Advantages of IIFE
+        1. Avoid polluting the global scope.
+        2. Create private scopes
+        3. Execute setup code immediately
+        */

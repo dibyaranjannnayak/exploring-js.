@@ -28,9 +28,14 @@ const user = {
 
     welcomeMessage: function(){
         console.log(`${this.name}, welcome to our system.`)
-    }
+        console.log(this)       // the whole user object
+    },
+  
 }
 
 user.welcomeMessage()
 user.name = 'dibyaranjan'
 user.welcomeMessage()
+console.log(this)       // {}
+
+
