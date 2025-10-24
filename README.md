@@ -99,7 +99,21 @@ Data Type Conversion ::
                   1.Number(NaN) = NaN
                   2.Number(undefined) = NaN
                   3.Number(null) = 0
-                  4.Number("") = 0               
+                  4.Number("") = 0      
+
+
+
+
+Truthy and falsy values::
+
+
+        // Falsy: In js, there are some defined values, which are considered as false(negative) by default.
+        // Truthy: reset other values are true, known as truthy values.
+
+        // Falsy values:  false, 0, -0, BigInt 0n, "", undefined, null, NaN
+        // Rest other values are truthy values.
+
+        // Truthy values(example): '0', 'false', " ", [], {}, function(){}
 
 Operations ::
 
