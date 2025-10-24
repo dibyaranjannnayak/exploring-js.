@@ -297,6 +297,33 @@ Object:
 
 
 
+
+
+Map::
+
+
+        // map object
+        /*
+        -a Map object is a collection of key-value pairs where the keys can be of any data type, including objects or functions. 
+        -This distinguishes it from plain JavaScript objects, which are limited to string or Symbol keys.
+        -Map objects also maintain the original insertion order of their keys, and offer methods for efficient manipulation of data. 
+        */
+
+        /*
+        -Flexible Keys: Unlike regular objects, Map objects can use any data type as a key, 
+                such as numbers, booleans, objects, or even other Map objects.
+
+        -Insertion Order Preservation: Map objects remember the order in which key-value pairs were inserted, 
+                                and iteration over a Map will follow this order.
+
+        -Also the key value pairs in map are unique.
+
+        -Built-in Size Property: The size property directly provides the number of key-value pairs in the Map.
+        */
+
+
+
+
 Function::
 
         -A function in JavaScript is a block of reusable code designed to perform a particular task. You can think of it as a mini-program inside your main program — it takes input (called parameters), processes it, and may return an output.
