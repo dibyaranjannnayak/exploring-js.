@@ -34,3 +34,12 @@ const adults = users.filter(user => user.age >= 18);
 
 console.log(adults);
 // [ { name: "Bob", age: 21 } ]
+
+
+// One intresting point.
+
+let moNum = num.filter(number => {
+    number >= 9
+})
+
+console.log(moNum)  // [], reason: as we have used {}, now its a explicitly return. So, we have to use return key word.

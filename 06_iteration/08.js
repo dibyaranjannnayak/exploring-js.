@@ -32,3 +32,8 @@ const updatedAges = ages
   .map(age => age + 5);       // [27, 35]
 
 console.log(updatedAges);
+
+
+//interesting
+const tryy = ages.map(age => age >= 18)
+console.log(tryy)           // [ true, true, true, false ], we shouldnot use map to filter data.
