@@ -13,7 +13,24 @@ array.filter(callbackFunction(element, index, array))
 ✔ Checks a condition (callback function)
 ✔ Returns a new array with elements that passed the condition
 ✖ Doesn’t change the original array
-*/`
+*/
+
+let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// Using an arrow function for conciseness
+const oddNumbers = num.filter(number => number % 2 !== 0);
+
+console.log(oddNumbers); // Output: [1, 3, 5, 7, 9]
 
 
 
+const users = [
+  { name: "Alice", age: 17 },
+  { name: "Bob", age: 21 },
+  { name: "Charlie", age: 16 },
+];
+
+const adults = users.filter(user => user.age >= 18);
+
+console.log(adults);
+// [ { name: "Bob", age: 21 } ]
