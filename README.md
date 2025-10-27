@@ -570,3 +570,74 @@ Execution Contex in JS ::
 ----------------------------------------------------------------------------------------------------------------------------------
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ----------------------------------------------------------------------------------------------------------------------------------
+
+
+
+DOM::
+
+
+      DOM: it stands for Document Object Model.
+        
+        -It is a programming interface provided by the browser that represents your HTML document as a tree of objects.
+        -DOM is how JavaScript sees and interacts with your webpage.
+
+        - In the DOM, everything is represented as a node.
+        - JavaScript represents those nodes as objects.
+
+        - A DOM node = A JavaScript object that represents part of the document
+
+
+
+        They refer to the same thing from different perspectives:
+        Tree structure → Node 
+        JavaScript side → Object
+
+
+
+        Concept	                                          Focus	                                                    Term Used
+
+        Structure in the document tree	     Relationship like parent, child, sibling	                               Node
+        Programmatic behavior	             Properties & methods in JavaScript	                                       Object
+
+        
+        
+        Document
+           └── html
+                └── body
+                        ├── h1
+                        └── p
+        Element Node: <p>
+                ├─ Attribute Node: class="info"
+                └─ Text Node: "Hello"
+
+
+
+       - The DOM doesn’t only represent HTML elements —
+       - It also gives JavaScript access to their styles (CSS).
+
+        - When an element becomes a DOM object, it gets a special property:
+        ➡️ .style
+        - which allows JS to read or modify the element’s inline styles.
+
+
+
+        - Ways JavaScript Changes CSS via DOM
+
+            Method	                                                                 How it works
+
+        .style property	                                                           Directly sets inline CSS
+        Changing class	                                                           Apply or remove CSS classes
+        Changing attributes	                                                   Example: updating class or id
+        Manipulating stylesheets	                                           Advanced, editing CSS rules
+
+
+
+        ➡️ The browser converts HTML + CSS into DOM + CSSOM
+        ➡️ Both merge into Render Tree
+        ➡️ JS can modify DOM/CSSOM
+        ➡️ Browser re-renders the UI immediately
+
+
+        HTML → DOM
+        CSS → CSSOM
+        DOM + CSSOM → Render Tree → Display
