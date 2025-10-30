@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>DOM manipulation</title>
+    </head>
+
+    <body style="background-color: black; color: white">
+        <h1>Hello, developers!</h1>
+
+        <div class="parent">
+            <div class="day">Monday</div>
+            <div class="day">tuesday</div>
+            <div class="day">wednesday</div>
+        </div>
+        
+    </body>
+
+    <script>
+        const parent= document.querySelector('.parent') // selects the whole div element with parent class.
+        console.log(parent)
+
+        console.log(parent.children)                // Gives the children elements of parent as a HTMLCollection object.
+        console.log(parent.children[0].innerHTML)
+
+        for(let i=0; i<parent.children.length; i++){        // we can use for loop on HTMLCollection.
+            console.log(parent.children[i].innerHTML)
+        }
+
+        parent.children[1].style.color = 'orange'
+
+        console.log(parent.firstElementChild)           // Gives the first element of the parent object.
+        console.log(parent.lastElementChild)            // Last element of parent object.
+
+        const dayOne = document.querySelector('.day')
+
+        console.log(dayOne)
+        console.log(dayOne.parentElement)           // It gives the parent object of dayone.
+        console.log(dayOne.nextElementSibling)      // Gives the sibling element of dayone.
+
+        console.log('nodes:', parent.childNodes)    // It gives nodeList of all the child nodes of parent element.
+        // Intresting thing is: it not only counts the visible elements, but also counts the next line and comments as nodes.
+        // In parent, we have 3 visibile div elements but, the number of nodes is 7; It counts next lines as nodes. 3 + 4 (line breaks)
+    </script>
+
+</html>

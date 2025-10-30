@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation</title>
+</head>
+
+<body>
+    
+</body>
+
+<script>
+    const div = document.createElement('div')       // create an div element and store it in the div constant.
+    console.log(div)
+
+    div.className = 'elemen'        // override class attribute
+    div.id = 'myId'                 // override id attribute
+
+    div.setAttribute('id', 'newId')     // create and set an id attribute.    
+    div.setAttribute('title', 'create') // create and set an title attribute.
+    div.style.background= 'blue'
+
+    div.innerText = 'old text'
+
+    const addText = document.createTextNode('new Text')         // create a text node and store it in addText constant.
+    div.appendChild(addText)                                    // add the addText text node to the div
+
+    document.body.appendChild(div)             // add the div element to the body of the html document.
+</script>
+</html>
+
+// * We can use both createTextNode, setAttribute or div.className, div.innerText etc
+// both methods work, but the appendChild or setAttribute method is preferable as it is more optimized.
+// when we use .innerText, first js retrives the value of innerText and then override it and add it to the tree, so we have to traverse
+// the whole tree two times.
+
+// Meanwhile, in the createTextNode or setAttribute method: we create the attribute and just add it to the parent.
