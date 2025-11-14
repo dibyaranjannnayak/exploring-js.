@@ -13,3 +13,24 @@ This value represents the number of milliseconds elapsed since the time the page
 
 
 */
+
+// You can use timeStamp to calculate how long it took between two user actions.
+
+let lastClick = 0;
+
+btn.addEventListener('click', (e) => {
+  if (lastClick) {
+    console.log("Time between clicks:", e.timeStamp - lastClick, "ms");
+  }
+  lastClick = e.timeStamp;
+});
+
+
+/*
+  Property	                Description	                              Units	                        Reference Point
+
+event.timeStamp	       Time (ms) when event was created	            milliseconds	                Since page load
+Date.now()	           Current absolute system time	                milliseconds	                Since Jan 1, 1970
+Use case	           Measure relative timings between events	         —	                               —
+
+*/
